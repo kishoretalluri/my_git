@@ -1,0 +1,6 @@
+<project name="flipkart" default="compile" basedir=".">
+	<target name="compile">
+		<javac srcdir="src" destdir="binary"/>
+	</target>
+
+</project>
