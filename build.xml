@@ -1,7 +1,11 @@
-<project name="flipkart" default="compile" basedir=".">
+<project name="flipkart" default="jar" basedir=".">
 	<target name="compile">
 		<mkdir dir="binary"/>
 		<javac srcdir="src" destdir="binary"/>
 	</target>
+	<target name="jar" depends="compile">
+		<jar basedir="binary" destdir="jar/hello.jar"/>
+	</target>
+		
 
 </project>
